@@ -58,6 +58,7 @@ const About = () => {
             width={600}
             height={700}
             alt="about erioluwa image"
+            priority
           />
         </div>
       </motion.div>

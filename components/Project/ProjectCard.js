@@ -59,10 +59,17 @@ const ProjectCard = ({
                 className={styles.carouselImage}
                 height={250}
                 width={500}
+                priority
               />
             </div>
             <div className={styles.carouselItem}>
-              <Image src={imageTwo} alt={altText} height={250} width={130} />
+              <Image
+                src={imageTwo}
+                alt={altText}
+                height={250}
+                width={130}
+                priority
+              />
             </div>
             <div className={styles.carouselItem}>
               <Image
@@ -71,10 +78,17 @@ const ProjectCard = ({
                 className={styles.carouselImage}
                 height={250}
                 width={500}
+                priority
               />
             </div>
             <div className={styles.carouselItem}>
-              <Image src={imageFour} alt={altText} height={250} width={130} />
+              <Image
+                src={imageFour}
+                alt={altText}
+                height={250}
+                width={130}
+                priority
+              />
             </div>
             <div className={styles.carouselItem}>
               <Image
@@ -83,6 +97,7 @@ const ProjectCard = ({
                 className={styles.carouselImage}
                 height={250}
                 width={500}
+                priority
               />
             </div>
           </Slider>
