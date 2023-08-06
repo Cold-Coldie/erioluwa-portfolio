@@ -83,7 +83,7 @@
         rgba(255, 255, 255, 0),
         var(--background-black) 80%
       ),
-      url("../public/static/erioluwa-black.png");
+      url("/static/erioluwa-black.png");
   }
 }
 
