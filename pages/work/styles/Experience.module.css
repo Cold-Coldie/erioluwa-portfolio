@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;500;700&display=swap");
+
+.container {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  height: fit-content;
+  padding-bottom: 3rem;
+}
+
+.experienceHeading {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 13rem;
+  height: fit-content;
+}
+
+.firstHeading {
+  color: white;
+}
+
+.firstExperienceWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.firstExperience {
+  width: 40vw;
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+.firstExperienceHeading,
+.secondExperienceHeading {
+  transform: translate(1rem, -3rem);
+  background-color: var(--background-black);
+  width: fit-content;
+  padding: 1rem;
+}
+
+.secondExperienceHeading {
+  margin-left: auto;
+  transform: translate(-1rem, -3rem);
+}
+
+.individualExperienceBody {
+  transform: translate(0, -3rem);
+}
+
+.role {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.organization {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.date {
+  color: var(--text-red);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date a {
+  text-decoration: none;
+  color: var(--text-red);
+}
+
+.organizationDetails {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.achievementsHeading {
+  color: var(--text-red);
+  font-weight: 500;
+}
+
+.achievements {
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.achievements .dash {
+  color: var(--text-red);
+  font-size: 2rem;
+}
+
+.seeProjects {
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  top: 20vh;
+  right: 10vw;
+  z-index: 1;
+}
+
+.seeProjects a {
+  padding: 2rem;
+  color: var(--text-red) !important;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.seeProjects .chevron {
+  animation: toAndFro 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.5, 0.5, 0.5);
+  animation-iteration-count: infinite;
+}
+
+.goHome {
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: fixed;
+  top: 15vh;
+  right: 15vw;
+  z-index: 1;
+}
+
+.goHome a {
+  padding: 2rem;
+  color: white !important;
+  text-decoration: none;
+}
+
+@keyframes toAndFro {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .firstExperience {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .seeProjects {
+    top: 13vh;
+  }
+
+  .goHome {
+    top: 10vh;
+  }
+}
