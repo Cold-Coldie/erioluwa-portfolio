@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;500;700&display=swap");
+
+.container {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  height: fit-content;
+  padding-bottom: 3rem;
+}
+
+.seeExperience {
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  top: 20vh;
+  right: 10vw;
+  z-index: 1;
+}
+
+.seeExperience a {
+  padding: 2rem;
+  color: var(--text-red) !important;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.seeExperience .chevron {
+  animation: toAndFro 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.5, 0.5, 0.5, 0.5);
+  animation-iteration-count: infinite;
+}
+
+.projectHeadingWrapper {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 12rem;
+  height: fit-content;
+}
+
+.projectHeading {
+  color: white;
+}
+
+.goHome {
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: fixed;
+  top: 15vh;
+  right: 15vw;
+  z-index: 1;
+}
+
+.goHome a {
+  padding: 2rem;
+  color: white !important;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 790px) {
+  .seeExperience {
+    top: 13vh;
+  }
+
+  .goHome {
+    top: 10vh;
+  }
+}
+
+@keyframes toAndFro {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(10px, 0, 0);
+  }
+}

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;500;700&display=swap");
+
+.container {
+  color: white;
+}
+
+.headingContainer {
+  font-family: "Roboto", sans-serif;
+  font-size: 8rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.pictureContainer {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.pictureWrapper {
+  width: 100%;
+  background-color: var(--background-gray);
+  margin-left: 20vw;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.aboutWrapper {
+  width: 100vw;
+  margin: 9rem 30% 3rem 20%;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.aboutWrapper h2 {
+  font-size: 2.5rem;
+}
+
+.aboutWrapper p {
+  margin: 2rem 0;
+}
+
+.aboutWrapper div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutWrapper div div {
+  margin: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.firstParagraph {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.resume a {
+  text-decoration: none;
+  color: var(--text-red);
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.goHome {
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: fixed;
+  top: 15vh;
+  right: 15vw;
+  z-index: 1;
+}
+
+.goHome a {
+  padding: 2rem;
+  color: white !important;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 650px) {
+  .headingContainer {
+    font-size: 7rem;
+    justify-content: start;
+    height: 70vh;
+  }
+
+  .pictureWrapper {
+    margin-left: 15vw;
+  }
+
+  .image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .aboutWrapper {
+    margin: 3rem 13% 3rem 13%;
+  }
+
+  .goHome {
+    top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .headingContainer {
+    font-size: 4rem;
+  }
+}

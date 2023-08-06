@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;500;700&display=swap");
+
+.container {
+  color: white;
+  height: 130vh;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 4rem;
+}
+
+.containerInner {
+  display: grid;
+}
+
+.blackPart {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.contactHeading {
+  display: flex;
+  justify-content: center;
+  margin: 6rem;
+  font-size: 4rem;
+}
+
+.contactBody {
+  display: flex;
+}
+
+.column1,
+.column2 {
+  width: 50vw;
+  z-index: 2;
+}
+
+.column1Content {
+  margin: 0 5rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.linkedin {
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.linkedinn {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.copyToClipboard {
+  cursor: pointer;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.phone a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactCard {
+  background-color: white;
+  color: black;
+  width: 30vw;
+  height: 53vh;
+  position: absolute;
+  border-radius: 1rem;
+  padding: 2rem;
+  min-height: fit-content;
+}
+
+.contactCard h2 {
+  font-weight: 500;
+}
+
+.inputWrapper {
+  display: grid;
+  border-bottom: 1px solid black;
+  margin: 1.5rem 0;
+}
+
+.inputWrapper span {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.inputWrapper .astericks {
+  color: red;
+}
+
+.inputWrapper input,
+.inputWrapper textarea {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+.cardBody button {
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  background-color: var(--background-black);
+  color: white;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.grayPart {
+  height: 60vh;
+  width: 100vw;
+  background-color: var(--background-gray);
+}
+
+.goHome {
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  position: fixed;
+  top: 15vh;
+  right: 15vw;
+  z-index: 1;
+}
+
+.goHome a {
+  padding: 2rem;
+  color: white !important;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    height: 208vh;
+  }
+
+  .blackPart {
+    height: 105vh;
+  }
+
+  .contactHeading {
+    display: flex;
+    justify-content: center;
+    margin: 6rem 2rem;
+    font-size: 4rem;
+  }
+
+  .contactBody {
+    display: grid;
+  }
+
+  .column1,
+  .column2 {
+    width: 100vw;
+  }
+
+  .column1Content {
+    margin: 0 2rem;
+  }
+
+  .socials {
+    margin-bottom: 2rem;
+  }
+
+  .column2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contactCard {
+    width: 70vw;
+    height: 60vh;
+    margin-top: 5rem;
+    min-height: fit-content;
+  }
+
+  .grayPart {
+    margin-top: 2rem;
+    height: 90vh;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .goHome {
+    top: 10vh;
+  }
+}
