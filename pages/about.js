@@ -4,6 +4,92 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
+import Skills from "./components/Skills";
+
+const skils = [
+  {
+    title: "HTML",
+    specificStyle: {
+      border: " 1px solid rgb(204, 85, 52)",
+      color: "rgb(204, 85, 52)",
+    },
+    imgSrc: "/icons/html-5.svg",
+    imgAlt: "HTML 5 icon",
+  },
+  {
+    title: "CSS",
+    specificStyle: {
+      border: "1px solid rgb(46, 74, 213)",
+      color: "rgb(46, 74, 213)",
+    },
+    imgSrc: "/icons/css.svg",
+    imgAlt: "CSS icon",
+  },
+  {
+    title: "JavaScript",
+    specificStyle: {
+      border: "1px solid rgb(235, 217, 77)",
+      color: "rgb(235, 217, 77)",
+    },
+    imgSrc: "/icons/javascript.svg",
+    imgAlt: "JavaScript icon",
+  },
+  {
+    title: "Tailwind CSS",
+    specificStyle: {
+      border: "1px solid rgb(73, 157, 201)",
+      color: "rgb(73, 157, 201)",
+    },
+    imgSrc: "/icons/tailwind.svg",
+    imgAlt: "Tailwind CSS icon",
+  },
+  {
+    title: "React JS",
+    specificStyle: {
+      border: "1px solid rgb(73, 157, 201)",
+      color: "rgb(73, 157, 201)",
+    },
+    imgSrc: "/icons/react.svg",
+    imgAlt: "React JS icon",
+  },
+  {
+    title: "Next JS",
+    specificStyle: {
+      border: "1px solid white",
+      color: "white",
+    },
+    imgSrc: "/icons/next-js.svg",
+    imgAlt: "Next JS icon",
+  },
+  {
+    title: "Angular",
+    specificStyle: {
+      border: "1px solid rgb(119, 28, 233)",
+      color: "rgb(119, 28, 233)",
+    },
+    imgSrc: "/icons/angular.svg",
+    imgAlt: "Angular icon",
+  },
+  {
+    title: "Java",
+    specificStyle: {
+      border: "1px solid rgb(49, 114, 183)",
+      color: "rgb(49, 114, 183)",
+    },
+    imgSrc: "/icons/java.svg",
+    imgAlt: "Java icon",
+  },
+  {
+    title: "Springboot",
+    specificStyle: {
+      border: "1px solid black",
+      color: "black",
+      background: "white",
+    },
+    imgSrc: "/icons/springboot.svg",
+    imgAlt: "Springboot icon",
+  },
+];
 
 const About = () => {
   const [goHomeText, setGoHomeText] = useState("erioluwa.");
@@ -97,60 +183,15 @@ const About = () => {
           <p>Below are some of my favourite technologies.</p>
 
           <div>
-            <div
-              style={{
-                border: " 1px solid rgb(204, 85, 52)",
-                color: "rgb(204, 85, 52)",
-              }}
-            >
-              HTML
-            </div>
-            <div
-              style={{
-                border: "1px solid rgb(46, 74, 213)",
-                color: "rgb(46, 74, 213)",
-              }}
-            >
-              CSS
-            </div>
-            <div
-              style={{
-                border: "1px solid rgb(235, 217, 77)",
-                color: "rgb(235, 217, 77)",
-              }}
-            >
-              JavaScript
-            </div>
-            <div
-              style={{
-                border: "1px solid rgb(98, 186, 243)",
-                color: "rgb(98, 186, 243)",
-              }}
-            >
-              Tailwind CSS
-            </div>
-            <div
-              style={{
-                border: "1px solid rgb(73, 157, 201)",
-                color: "rgb(73, 157, 201)",
-              }}
-            >
-              React JS
-            </div>
-            <div style={{ border: "1px solid white", color: "white" }}>
-              Next JS
-            </div>
-            <div
-              style={{
-                border: "1px solid rgb(103, 160, 80)",
-                color: "rgb(103, 160, 80)",
-              }}
-            >
-              Node JS
-            </div>
-            <div style={{ border: "1px solid white", color: "white" }}>
-              Express JS
-            </div>
+            {skils?.map((item, index) => (
+              <Skills
+                key={index}
+                title={item?.title}
+                specificStyle={item?.specificStyle}
+                imgSrc={item?.imgSrc}
+                imgAlt={item?.imgAlt}
+              />
+            ))}
           </div>
 
           <p>Below is a PDF format of my resume </p>
@@ -163,7 +204,7 @@ const About = () => {
             className={styles.resume}
           >
             <Link href={"/uploads/erioluwa-resume.pdf"}>
-              My resume (pdf 56kb)
+              My resume (PDF 58kb)
             </Link>
           </motion.div>
         </div>

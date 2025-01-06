@@ -177,7 +177,17 @@ const Contact = () => {
                     >
                       <Toaster />
                       {copyToClipboard ? (
-                        "Copy to clipboard"
+                        <div
+                          style={{
+                            background: "white",
+                            borderRadius: "5px",
+                            padding: "7px",
+                            color: "black",
+                            fontWeight: "500",
+                          }}
+                        >
+                          Copy Email
+                        </div>
                       ) : (
                         <Image
                           className={styles.linkedinn}
