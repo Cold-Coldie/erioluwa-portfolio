@@ -71,6 +71,15 @@ const skils = [
     imgAlt: "Angular icon",
   },
   {
+    title: "Jest",
+    specificStyle: {
+      border: "1px solid rgb(142, 71, 91)",
+      color: "rgb(142, 71, 91)",
+    },
+    imgSrc: "/icons/jest.svg",
+    imgAlt: "Jest icon",
+  },
+  {
     title: "Java",
     specificStyle: {
       border: "1px solid rgb(49, 114, 183)",
